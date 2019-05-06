@@ -1,0 +1,15 @@
+ <?php echo form_open('login/login')?>
+ <table class="table">
+ <tr>
+  <td>Username</td>
+  <td><?php echo form_submit([ 'name'=>'Username','value'=>set_value('Username'), 'placeholder'=>'Enter your ID','class'=>'form-control']);?></td>
+  <td><?php echo form_error('Username');?></td>
+ <tr> 
+  <td>Password</td>
+  <td><?php echo form_submit([ 'name'=>'Password','value'=>set_value('Password'), 'placeholder'=>'Password','class'=>'form-control']);?><td>
+  <td><?php echo form_error('Password');?><td>
+  </tr>
+  <tr>    
+     <td><?php echo form_submit([ 'name'=>'submit','value'=>'Login', 'class'=>'btn btn-reg'])?><td>
+  </tr>   
+ </table>
